@@ -20,6 +20,9 @@ def main():
     #    pygame.display.update()
     
     personagem1 = personagem("Personagem 1")
+    personagem2 = personagem("Personagem 2")
+    
+    mostrar_personagens()
     
     
     
