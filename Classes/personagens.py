@@ -1,6 +1,6 @@
-from Classes.bases.atributos import atributos
-# from Classes.bases.salvaguardas_morte import salvaguardas_morte
-from Classes.bases.hp import vida
+from classes.bases.atributos import atributos
+# from classes.bases.salvaguardas_morte import salvaguardas_morte
+from classes.bases.hp import vida
 
 class personagem:
     lista_personagens = []
@@ -38,5 +38,5 @@ class personagem:
         return self.atributos_temp
     
     def __repr__(self) -> str:
-        return f"Nome: {self.nome}\n{self.vida}\nAtributos Base:\n{self.atributos_base}\nAtributos Temporários:\n{self.atributos_temp}"
-    
+        repr_atributos_base = f"Atributos Base:\n{self.atributos_base[0]}\n{self.atributos_base[1]}\n{self.atributos_base[2]}\n{self.atributos_base[3]}\n{self.atributos_base[4]}\n{self.atributos_base[5]}\nAtributos Temporários:\n{self.atributos_temp[0]}\n{self.atributos_temp[1]}\n{self.atributos_temp[2]}\n{self.atributos_temp[3]}\n{self.atributos_temp[4]}\n{self.atributos_temp[5]}"
+        return f"Nome: {self.nome}\n{self.vida}\n{repr_atributos_base}"

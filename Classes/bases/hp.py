@@ -1,6 +1,4 @@
-from recursos import recursos
-
-
+from classes.bases.recursos import recursos
 
 class vida:
     hp = recursos("Pontos de Vida")
@@ -42,7 +40,7 @@ class vida:
         self.hp_conjunto[1].aumentar(valor)
         
     def __repr__(self) -> str:
-        return f"{self.hp_conjunto[0].get_nome()}:\n{self.hp_conjunto[0].get_atual()}/{self.hp_conjunto[0].get_maximo()}\n{self.hp_conjunto[1].get_nome()}:\n{self.hp_conjunto[1].get_atual()}/{self.hp_conjunto[1].get_maximo()}\nDados de Vida:\n{self.dados_vida_conjunto[0].get_atual()}{self.dados_vida_conjunto[1]}"
+        return f"{self.hp_conjunto[0].get_nome()}: {self.hp_conjunto[0].get_atual()}/{self.hp_conjunto[0].get_maximo()}\n{self.hp_conjunto[1].get_nome()}: {self.hp_conjunto[1].get_atual()}/{self.hp_conjunto[1].get_maximo()}\n{self.dados_vida_conjunto[0].get_nome()}: {self.dados_vida_conjunto[0].get_atual()}{self.dados_vida_conjunto[1]}/{self.dados_vida_conjunto[0].get_maximo()}{self.dados_vida_conjunto[1]}"
         
             
                 

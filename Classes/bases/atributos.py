@@ -1,5 +1,5 @@
 class atributos:
-    def __init__(self, nome: str, valor = 8):
+    def __init__(self, nome: str, valor = 10):
         self.nome = nome
         self.valor = valor
         self.set_modificador()
@@ -26,6 +26,8 @@ class atributos:
     def get_modificador(self):
         return self.modificador
 
+    def __repr__(self) -> str:
+        return f"{self.nome}: {self.valor} ({self.modificador})"
 
         
     

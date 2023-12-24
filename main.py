@@ -32,6 +32,7 @@ def main():
 def mostrar_personagens():
     for i in personagem.lista_personagens:
         print(i)
+        print("=========================================")
     
 if __name__ == "__main__":
     main()
