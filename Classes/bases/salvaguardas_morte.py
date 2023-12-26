@@ -1,7 +1,7 @@
 from recursos import recursos
 
 class salvaguardas_morte:
-    def __init__(self, sucessos = 0, falhas = 0):
+    def __init__(self, sucessos: int = 0, falhas: int = 0):
         self.sucessos = recursos("Sucessos", sucessos, 3)
         self.falhas = recursos("Falhas", falhas, 3)
         

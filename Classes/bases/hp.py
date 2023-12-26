@@ -33,6 +33,8 @@ class vida:
             self.hp_conjunto[0].reduzir(valor - (valor - hp_temp))
             self.hp_conjunto[1].set_atual(0)
             
+        self.hp_conjunto[1].set_maximo(self.hp_conjunto[1].get_atual())
+            
     def cura(self, valor):
         self.hp_conjunto[0].aumentar(valor)
         
